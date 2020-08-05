@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    background-color: black;
+    color: cornsilk;
+}
+nav {
+    margin: auto;
+}
+
+nav li{
+    display: inline;
+    text-decoration: none;
+    list-style-type: none; 
+    margin: auto;
+    margin-right: 5%;
+
+ }
+ a {
+    text-decoration: none;
+ }
+ a:hover {
+     color: gray;
+ }
+ h4{
+     text-align: center;
+     margin: auto;
+ }
+ .class h2 {
+    text-align: center;
+    margin: auto;
+    margin-top: 5%; 
+    margin-bottom: 1%;  
+ }
+ #intro {
+     text-align: center;
+     margin: auto;
+     margin-top: 2%;
+ }
