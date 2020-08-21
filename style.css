@@ -53,10 +53,14 @@ nav li{
  .class li, .research li{
      margin-bottom: 2%;
      list-style-type: none;
-     /* text-decoration: underline; */
+    
  }
  #intro {
      text-align: center;
      margin: auto;
      margin-top: 2%;
  }
+ .hidden {
+     display: block;
+ }
+ 

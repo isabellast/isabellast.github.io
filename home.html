@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- <script src="app.js"></script> -->
     <title>Isabell Astor</title>
 </head>
 <body>
     <nav>
         <ul>
             <li><a href = "#">Home<a></li>
-            <li><a href="#eighty-three">Projects</a></li>
+            <li><a href="#eighty-three" >Projects</a></li>
             <!-- <li><a href="Resume.html">Resume</a></li> -->
             <li><a href="about.html">About</a></li>
         </ul>
@@ -18,20 +19,20 @@
 
     <div id="intro">
        <h1>Isabell Astor</h1>
-       <p> <br>A Computer Science student at the Univeristy of Michigan.   </p> 
+       <p> <br>A Computer Science student at the University of Michigan.   </p> 
     </div>
     <div class = "class" id = "eighty-three">
-        <h2>EECS 183 |   Elementary Programming Concepts</h2>
-        <div>
+        <h2 id= "test"><a>EECS 183 |   Elementary Programming Concepts</a></h2>
+        <div class="hidden">
             <hr>
             
             <ol>
                 <li>Scone Shopping List Maker |  C++</li>
-                <p>A dynamic shopping list generator for a fixed scone recipe. Ingredient list amount for shopping list changes
+                <p>A dynamic shopping list generator for a fixed scone recipe. Shopping ingredient list amount for shopping list changes
                     based on the amount of scones entered by the user. <br><br>
                 </p>
                 <li>Ohhi |  C++</li>
-                <p> A console version of the logic game Ohhi with two tile types depicted as X and O. All rows
+                <p> A console version of the logic game Ohhi with two binary tile types depicted as X and O. All rows
                      and columns must have equal number of X and O's and no identical columns and rows can be present.  
                      <br><br>
                 </p>
@@ -43,7 +44,7 @@
                 <p>A console game elevators with two playing modes, CPU emulation and human game play. The goal 
                     is to get each generated person to the correct floor in the building
                     without exceding the individual's anger level. Each person is generated on a specific floor
-                     of the building and the user's input is parsed according to the possible moves within the game.
+                     of the building and the user's input is parsed and executed according to the possible moves within the game.
                     <br><br>
                 </p>
             </ol>
@@ -51,7 +52,7 @@
     </div>
     <div class = "class" id = "eighty">
         <h2>Programming and Data Structures |   EECS 280 </h2>
-        <div>
+        <div class="hidden">
             <hr>
             <ol>
                 <li>Statistics Reader | C++</li>
@@ -59,7 +60,7 @@
                     <br><br>
                 </p>
                 <li>Image Processor Project |   C++</li>
-                <p> An image resizing progam which uses seam carving. Input an image and input the output dimentions
+                <p> An image resizing progam which uses seam carving. Input an image and input the output dimensions 
                     and the correct image is created and saved as an output file. 
                       <br><br>
                 </p>
@@ -80,7 +81,7 @@
     </div>
     <div class = "class" id = "eighty-one">
         <h2>EECS 281 |   Data Structures and Algorithms</h2>
-        <div>
+        <div class="hidden">
             <hr>
             <ol>
                 <li>Puzzle Solver | C++</li>
@@ -93,7 +94,7 @@
                 <p>A Stock stimulation program with a time traveler feature. The program processes orders as they are
                     received. Buying and selling between traders happen based off of the program's critiera for trades.
                     The trades are output as they take place and the numer of trade orders processed are output at the end
-                    of the trades on file. If time traveler mode si invoked,
+                    of the trades on file. If time traveler mode is invoked,
                     it calculates which trades would have created the most profit for each trader
                     and reports this at the end of the program.
                     <br><br>
@@ -124,10 +125,14 @@
     </div>
     <div class = "research">
         <h2>Research</h2>
-        <div>
+        <div class="hidden">
             <hr>
             <ol>
                 <li>Paradigm Shifts in Conceptual Networks | Research Assistant 2019</li>
+                <p>
+                    Research paper is in the process of being reviewed.
+                      <br><br>
+                </p>
             </ol>
         </div>
     </div>
