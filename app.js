@@ -4,53 +4,62 @@
     const projectRelease = document.getElementById("projrel")
     const hiddenContent = document.getElementsByClassName("hidden")
 
-    let count = 0;
-    console.log(hiddenContent)
-    projectRelease.addEventListener("click",function
-    (event){
-        event.preventDefault();
+    const classSpecRelease = document.getElementsByClassName("RC")
+    const researchSpecRelease = document.getElementsByClassName("R")
 
-        if (count % 2 == 0){
-            projectRelease.innerHTML= "Classes/Research"
-            hiddenContent[0].classList.add("show")
-            hiddenContent[1].classList.add("show")
-            hiddenContent[2].classList.add("show")
-            hiddenContent[3].classList.add("show")
-            
+
+
+    function addShow(element, content){
+        element.preventDefault();
+
+        if(!content.classList.contains("show")){
+            content.classList.add("show")
         }else{
-            projectRelease.innerHTML= "Projects"
-            hiddenContent[0].classList.remove("show")
-            hiddenContent[1].classList.remove("show")
-            hiddenContent[2].classList.remove("show")
-            hiddenContent[3].classList.remove("show")
+            console.log("here")
+            content.classList.remove("show")
         }
+    }
+
+
+
+    let count = 0;
+    // console.log(hiddenContent)
+
+
+
+    console.log(classSpecRelease);
+
+    classSpecRelease[0].addEventListener("click", function(element){addShow(element, hiddenContent[0])});
+    classSpecRelease[1].addEventListener("click", function(element){addShow(element, hiddenContent[1])});
+    classSpecRelease[2].addEventListener("click", function(element){addShow(element, hiddenContent[2])});
+    researchSpecRelease[0].addEventListener("click", function(element){addShow(element, hiddenContent[3])});
+
+
+    // hiddenContent[3].classList.add("show")
+
+
+    // projectRelease.addEventListener("click",function
+    // (event){
+    //     event.preventDefault();
+
+    //     if (count % 2 == 0){
+    //         projectRelease.innerHTML= "Classes/Research"
+    //         hiddenContent[0].classList.add("show")
+    //         hiddenContent[1].classList.add("show")
+    //         hiddenContent[2].classList.add("show")
+    //         hiddenContent[3].classList.add("show")
+            
+    //     }else{
+    //         projectRelease.innerHTML= "Projects"
+    //         hiddenContent[0].classList.remove("show")
+    //         hiddenContent[1].classList.remove("show")
+    //         hiddenContent[2].classList.remove("show")
+    //         hiddenContent[3].classList.remove("show")
+
+           
+    //     }
         
 
         
-        ++count;
-    });
-
-
-    // var allHidden = document.getElementsByClassName('hidden');
-
-    // console.log(allHidden);
-    
-    
-    // var projectRelease2 = document.getElementsByTagName('li')
-    
-    // console.log(projectRelease2)
-    
-    // projectRelease2.forEach(element => {
-    //     console.log("hey");
+    //     ++count;
     // });
-
-
-
-
-
-// const projectRelease = document.querySelector('#projrel');
-// console.log(projectRelease2[17].innerHTML)
-
-// projectRelease.addEventListener('click', (event) => {
-//     console.log("this is working");
-// })
