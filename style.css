@@ -43,7 +43,7 @@ nav li{
  footer{
     text-align: center;
      margin: auto;
-     margin-top: 3%; 
+     margin-top: 6%; 
      margin-bottom: 2%;
  }
  .cla h2, .research h2{
@@ -61,6 +61,11 @@ nav li{
  .cla, .research{
     -webkit-animation: fs 2s;
  }
+ .about{
+     display: flex;
+     margin:0% 22% 0% 15%;
+ }
+ 
  #intro {
      text-align: center;
      margin: auto;
